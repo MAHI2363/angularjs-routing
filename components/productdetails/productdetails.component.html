@@ -1,0 +1,11 @@
+<div>
+    Product List Component
+    <div class="product-list-item" >
+        <h3 ng-bind="$ctrl.product.name"></h3>
+        <p ng-bind="$ctrl.product.price | currency"></p>
+        <div>
+            <img width="200" height="200" ng-src="{{$ctrl.product.imgurl}}" alt="">
+        </div>
+        <a ui-sref="products">Back to Products</a>
+    </div>
+</div>
